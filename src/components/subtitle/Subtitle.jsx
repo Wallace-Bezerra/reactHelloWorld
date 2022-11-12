@@ -1,11 +1,9 @@
-import styles from "./subtitle.module.css"
+import styles from "./subtitle.module.css";
 
-function Subtitle(props){
-return (
-  <h1 className={styles.subtitle}>
-    {props.text}
-  </h1>
-)
+function Subtitle({ text }) {
+  return <h1 className={styles.subtitle}>{text}</h1>;
 }
 
-export default Subtitle
+Subtitle.defaultProps = { text: "padrao" };
+
+export default Subtitle;
